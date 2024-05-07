@@ -20,16 +20,19 @@ function createBoxes(amount) {
   box.style.height = `${boxBeggin}px`;
   container.style.display = "flex";
   container.style.flexWrap = "wrap";
+  container.style.flexDirection = "row-reverse";
+  container.style.justifyContent = "flex-end";
   container.style.gap = "44px"
   container.style.marginTop = "16px";
   container.prepend(box);
 }
 
 inputField.addEventListener("input", handleInput);
+
 function handleInput(event) {
   amount.push(event.target.value);
-  // input.reset();
 };
+
 
 btnCreate.addEventListener("click", handleCreate);
 
