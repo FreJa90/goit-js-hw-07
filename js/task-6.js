@@ -35,11 +35,11 @@ btnCreate.addEventListener("click", handleCreate);
 
 function handleCreate(event) {
   amount.forEach(element => {
-    createBoxes(element)
+    createBoxes(element);
     boxBeggin += 10;
   })
   
 };
 
 btnDestroy.addEventListener("click", handleDestroy);
-function handleDestroy(event) { };
+function handleDestroy(event) { container.innerHTML = " "};
