@@ -40,3 +40,12 @@ img {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 44px;
+  margin-top: 16px;
+}
